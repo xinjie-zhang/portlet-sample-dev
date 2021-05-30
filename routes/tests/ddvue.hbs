@@ -1,0 +1,21 @@
+{{!< empty }}
+
+<div id="app"></div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.2/vue.js"></script>
+<script src="/_/ddvue/App.js"></script>
+<script>
+
+    Vue.config.productionTip = false
+    window.drag = new Vue();
+
+    /* eslint-disable no-new */
+    new Vue({
+        el: '#app',
+        template: '<App/>',
+        components: { App: ddvue.App }
+    })
+
+</script>
