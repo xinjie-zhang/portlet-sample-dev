@@ -1,0 +1,14 @@
+{{!< empty }}
+
+<div id="root"></div>
+<script src="/vue@2.6.11.min.js"></script>
+<script src="/_/dyncomp/simple/App.js"></script>
+<script>
+    
+    Vue.config.productionTip = false;
+
+    new Vue({
+        render: h => h(dyncomp.simple.App)
+    }).$mount("#root");
+    
+</script>
