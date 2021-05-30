@@ -1,0 +1,25 @@
+timezone: Asia/Shanghai
+logger:
+  console:
+portlet:
+  port: {{PORT}}
+  version: "0.5.0"
+  name: standalone
+  layout: main
+  language: cn
+  redirects:
+    '/': 'menu://main'
+    '/users' : 'menu://main/settings/users'
+  uploadDir: '{{STORAGE_ROOT}}/uploads'
+  uploadMaxFileSize: 1G
+  storages:
+    avatar: 
+      type: local
+      options:
+        root: '{{STORAGE_ROOT}}/storage'
+      bucket: 'main'
+      prefix: 'avatar/'
+      cacheDir: '{{STORAGE_ROOT}}/cache'
+  passport:
+    jwt:
+      expiration: 24h

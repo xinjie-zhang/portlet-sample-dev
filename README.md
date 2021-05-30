@@ -1,1 +1,1 @@
-# portlet-sample-dev
+# portlet-sample-standalone
